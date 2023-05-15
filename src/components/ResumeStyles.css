@@ -1,0 +1,128 @@
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pdf-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .pdf-page {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .pdf-controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .pdf-controls p {
+    margin-right: 10px;
+  }
+  
+  .pdf-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .pdf-nav-btn,
+  .pdf-download-btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .pdf-nav-btn:disabled,
+  .pdf-download-btn.disabled {
+    cursor: default;
+    background-color: gray;
+    color: white;
+  }
+  
+  .pdf-download-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .pdf-download-btn:hover {
+    background-color: #004560;
+  }
+  
+  .pdf-nav-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+  }
+  
+  .pdf-nav-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pdf-controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .pdf-controls p {
+      margin-bottom: 10px;
+    }
+  
+    .pdf-nav-btn,
+    .pdf-download-btn {
+      margin: 0 0 10px;
+    }
+  }
+  
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
