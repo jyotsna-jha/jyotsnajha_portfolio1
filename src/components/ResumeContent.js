@@ -1,6 +1,6 @@
 import "./ResumeStyles.css";
 import React, { useState } from 'react';
-import resumePdf from '../assets/j.pdf';
+import resumePdf from '../assets/j1.pdf';
 
 const ResumeContent = () => {
   const [isDownloading, setIsDownloading] = useState(false);
